@@ -190,7 +190,7 @@ func quiz(context *cli.Context) error {
 		}
 		fmt.Println(" ", word)
 
-		time.Sleep(800 * time.Millisecond) // add a slight delay to reduce the output "shock"
+		time.Sleep(200 * time.Millisecond) // add a slight delay to reduce the output "shock"
 
 		fmt.Print("enter to continue: ")
 		if _, err := bufio.NewReader(os.Stdin).ReadString('\n'); err != nil {
